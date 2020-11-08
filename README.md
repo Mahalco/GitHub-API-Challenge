@@ -74,7 +74,7 @@ Since we set up our webhook to listen to events dealing with Repositories create
 
 - Step Four: On clicking Add rule, enter the name of Branch which is “master” 
 
-- Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. 
+- Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. There are other options for your consideration to add addtional protection. Please review referred link below.
 
 - Step Six: Click on the Create button when done
 
