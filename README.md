@@ -4,6 +4,8 @@
 Learn to build a webhook, choosing the events your webhook will listen for on GitHub and how to set up a server to receive and manage the webhook payload.
 https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/creating-webhooks
 
+Note: Since our webhook is dealing with repository, we will select individual events and then Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.
+
 # Configuring your server to receive payloads
 ## Step One: Download ngrok
 https://ngrok.com/download
