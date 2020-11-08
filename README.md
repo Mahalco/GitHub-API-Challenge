@@ -55,3 +55,8 @@ Forwarding                    https://7bd461818ac4.ngrok.io -> http://localhost:
 
 
 See that URL on the ngrok domain? That’s the brand new home of your local web app on the public Internet. In a browser window, open up https://[your generated ID].ngrok.io/payload – this should display the same XML found at http://localhost:4567/payload – verify this is the case.
+
+Start this server up.
+
+Since we set up our webhook to listen to events dealing with Repositories created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred, go ahead and create a new repository. Once you create it, switch back to your terminal. You should see something like this in your output:
+I got some JSON: {"ref"=>"refs/heads/main", "before"=>"995d945c9420fa72c332da2fe8772a8ae8092b4b", "after"=>"22a04c4b3af3fbbf7741004e85cbfd7c5c4bfbd5", "repository"=>{"id"=>310928908, "node_id"=>"MDEwOlJlcG9zaXRvcnkzMTA5Mjg5MDg=", "name"=>"GitHub-API-Challenge", "full_name"=>"Mahalco/GitHub-API-Challenge", "private"=>false, "owner"=>{"name"=>"Mahalco", "email"=>nil, "login"=>"Mahalco", "id"=>74116661, "node_id"=>"MDEyOk9yZ2FuaXphdGlvbjc0MTE2NjYx", "avatar_url"=>"https://avatars0.githubusercontent.com/u/74116661?v=4", "...
