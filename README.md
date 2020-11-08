@@ -66,16 +66,16 @@ Since we set up our webhook to listen to events dealing with Repositories create
 # Protect The Master Branch
 ## Step by Step
 
-Step One: To protect the master branch, navigate to the repository Settings 
+- Step One: To protect the master branch, navigate to the repository Settings 
 
-Step Two: Click on Branches by the left-hand corner 
+- Step Two: Click on Branches by the left-hand corner 
 
-Step Three: Click Add rule 
+- Step Three: Click Add rule 
 
-Step Four: On clicking Add rule, enter the name of Branch which is “master” 
+- Step Four: On clicking Add rule, enter the name of Branch which is “master” 
 
-Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. 
+- Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. 
 
-Step Six: Click on the Create button when done
+- Step Six: Click on the Create button when done
 
 >Referencere: https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuring-protected-branches
