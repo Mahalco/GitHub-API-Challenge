@@ -5,7 +5,7 @@ Learn to build a webhook, choosing the events your webhook will listen for on Gi
 
 - To set up a webhook, go to the settings page of your repository or organization. From there, click Webhooks, then Add webhook. 
 
-- The payload URL is the URL of the server that will receive the webhook POST requests. https://[your generated ID].ngrok.io/payload; refer to below "Write a web application" 
+- The payload URL is the URL of the server that will receive the webhook POST requests. https://[your generated ID].ngrok.io/payload; Please, refer to below **Configuring your server to receive payloads** 
 
 - Content Type - The application/json content type will deliver the JSON payload directly as the body of the POST request. 
 
