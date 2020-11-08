@@ -28,7 +28,7 @@ end\
 
 To run this Ruby application, you will need to have Ruby and the Sinatra gem installed.  On the Mac, you already have Ruby installed.  To install Sinatra, enter the command “gem install sinatra” in a Terminal window to install the Sinatra web framework.  Windows and Linux will require a little more setup.
 
-To start a local HTTP server running this code, open up a Terminal window and create a file called “app.rb”.  Place the code above in this file and save it.  Run the code in your Terminal window with the command “ruby webhooks.rb”.  You should now have a Ruby web server running on local port 4567
+To start a local HTTP server running this code, open up a Terminal window and create a file called “webhooks.rb”.  Place the code above in this file and save it.  Run the code in your Terminal window with the command “ruby webhooks.rb”.  You should now have a Ruby web server running on local port 4567
 
 We now need to start ngrok, telling it which port we want to expose to the public Internet. In the Terminal, type ./ngrok 4567 on Linux and Mac, and just ngrok 4567 on Windows. After starting up, you should see something like the following:
 
