@@ -24,9 +24,9 @@ The next step is to write a web application that can respond to inbound calls.
 
 As an example, here’s a tiny Sinatra application, written in Ruby, that will respond to a GET request to “/payload” 
 
-webhooks.rb
+File name: webhooks.rb
 
-"\
+"
 require 'sinatra'\
 require 'json'\
 post '/payload' do\
