@@ -15,15 +15,16 @@ The next step is to write a web application that can respond to inbound calls.
 As an example, here’s a tiny Sinatra application, written in Ruby, that will respond to a GET request to “/payload” 
 
 webhooks.rb
+
 "
 require 'sinatra'
 require 'json'
-
 post '/payload' do
   push = JSON.parse(request.body.read)
   puts "I got some JSON: #{push.inspect}"
 end
 "
+
 To run this Ruby application, you will need to have Ruby and the Sinatra gem installed.  On the Mac, you already have Ruby installed.  To install Sinatra, enter the command “gem install sinatra” in a Terminal window to install the Sinatra web framework.  Windows and Linux will require a little more setup.
 
 To start a local HTTP server running this code, open up a Terminal window and create a file called “app.rb”.  Place the code above in this file and save it.  Run the code in your Terminal window with the command “ruby webhooks.rb”.  You should now have a Ruby web server running on local port 4567
