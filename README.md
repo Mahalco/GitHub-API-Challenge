@@ -73,9 +73,14 @@ I got some JSON: {"ref"=>"refs/heads/main", "before"=>"995d945c9420fa72c332da2fe
 # Protect The Master Branch
 ## Step by Step
 
-Step One: To protect the master branch, navigate to the repository Settings \
-Step Two: Click on Branches by the left-hand corner \
-Step Three: Click Add rule \ 
-Step Four: On clicking Add rule, enter the name of Branch which is “master” \ 
-Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. \
+Step One: To protect the master branch, navigate to the repository Settings 
+
+Step Two: Click on Branches by the left-hand corner 
+
+Step Three: Click Add rule 
+
+Step Four: On clicking Add rule, enter the name of Branch which is “master” 
+
+Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. 
+
 Step Six: Click on the Create button when done
