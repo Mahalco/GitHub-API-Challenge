@@ -2,9 +2,21 @@
 # Creating webhooks
 
 Learn to build a webhook, choosing the events your webhook will listen for on GitHub and how to set up a server to receive and manage the webhook payload.
-https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/creating-webhooks
 
-Note: Since our webhook is dealing with repository, we will select individual events and then Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred.
+- To set up a webhook, go to the settings page of your repository or organization. From there, click Webhooks, then Add webhook. 
+
+- The payload URL is the URL of the server that will receive the webhook POST requests. https://[your generated ID].ngrok.io/payload; refer to below "Write a web application" 
+
+- Content Type - The application/json content type will deliver the JSON payload directly as the body of the POST request. 
+
+- Setting a webhook secret allows you to ensure that POST requests sent to the payload URL are from GitHub. When you set a secret, you'll receive the X-Hub-Signature and X-Hub-Signature-256 headers in the webhook POST request. 
+
+- Since our webhook is dealing with repository, we will select individual events and then Repository created, deleted, archived, unarchived, publicized, privatized, edited, renamed, or transferred. 
+
+- Make sure you select Active to receive issue events for triggered webhooks. You can also select all events using the default option.
+
+- When you're finished, click Add webhook. Phew! Now that you created the webhook. 
+
 
 # Configuring your server to receive payloads
 ## Step One: Download ngrok
@@ -52,6 +64,9 @@ Since we set up our webhook to listen to events dealing with Repositories create
 I got some JSON: {"ref"=>"refs/heads/main", "before"=>"995d945c9420fa72c332da2fe8772a8ae8092b4b", "after"=>"22a04c4b3af3fbbf7741004e85cbfd7c5c4bfbd5", "repository"=>{"id"=>310928908, "node_id"=>"MDEwOlJlcG9zaXRvcnkzMTA5Mjg5MDg=", "name"=>"GitHub-API-Challenge", "full_name"=>"Mahalco/GitHub-API-Challenge", "private"=>false, "owner"=>{"name"=>"Mahalco", "email"=>nil, "login"=>"Mahalco", "id"=>74116661, "node_id"=>"MDEyOk9yZ2FuaXphdGlvbjc0MTE2NjYx"...
 
 ***Success! You've successfully configured your server to listen to webhooks.***
+
+>Referencere: https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/configuring-your-server-to-receive-payloads
+
 
 
 
