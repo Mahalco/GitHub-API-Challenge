@@ -17,7 +17,7 @@ As an example, here’s a tiny Sinatra application, written in Ruby, that will r
 
 webhooks.rb
 
-"
+"\
 require 'sinatra'\
 require 'json'\
 post '/payload' do\
@@ -32,14 +32,13 @@ To start a local HTTP server running this code, open up a Terminal window and cr
 
 We now need to start ngrok, telling it which port we want to expose to the public Internet. In the Terminal, type ./ngrok 4567 on Linux and Mac, and just ngrok 4567 on Windows. After starting up, you should see something like the following:
 
-
-  Session Status                online\ 
-  Account                       amanmahal (Plan: Free)\
-  Version                       2.3.35\
-  Region                        United States (us)\
-  Web Interface                 http://127.0.0.1:4040\
-  Forwarding                    http://7bd461818ac4.ngrok.io -> http://localhost:4567\
-  Forwarding                    https://7bd461818ac4.ngrok.io -> http://localhost:4567\
+  Session Status                online \ 
+  Account                       amanmahal (Plan: Free) \
+  Version                       2.3.35 \
+  Region                        United States (us) \
+  Web Interface                 http://127.0.0.1:4040 \
+  Forwarding                    http://7bd461818ac4.ngrok.io -> http://localhost:4567 \
+  Forwarding                    https://7bd461818ac4.ngrok.io -> http://localhost:4567 
 
 
 See that URL on the ngrok domain? That’s the brand new home of your local web app on the public Internet. In a browser window, open up https://[your generated ID].ngrok.io/payload – this should display the same XML found at http://localhost:4567/payload – verify this is the case.
