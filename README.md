@@ -1,13 +1,13 @@
 # GitHub-API-Challenge!
-#Creating webhooks
+# Creating webhooks
 
 https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/creating-webhooks
 
-#Configuring your server to receive payloads
-##Step One: Download ngrok
+# Configuring your server to receive payloads
+## Step One: Download ngrok
 ngrok is a Go program, distributed as a single executable file for all major desktop platforms.  This is super rad – no additional frameworks to install or other dependencies.  Grab the version for your development system of choice and simply unzip the file somewhere on your computer.
 
-##Step Two: Write a web application 
+## Step Two: Write a web application 
 The next step is to write a web application that can respond to inbound calls. 
 
 As an example, here’s a tiny Sinatra application, written in Ruby, that will respond to a GET request to “/payload” 
