@@ -84,3 +84,5 @@ Step Four: On clicking Add rule, enter the name of Branch which is “master”
 Step Five: Select “Require Pull request reviews before merging” this will force a code review before changes are merged to the master branch. 
 
 Step Six: Click on the Create button when done
+
+>Referencere: https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuring-protected-branches
